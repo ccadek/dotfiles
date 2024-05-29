@@ -21,6 +21,7 @@ set $menu dmenu_path | wmenu | xargs swaymsg exec --
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 
+
 #
 # Example configuration:
 #
@@ -52,7 +53,7 @@ input "2:7:SynPS/2_Synaptics_TouchPad" {
 bindsym $mod+Return exec $term
 
 # Kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+Shift_L+q kill
 
 # Start your launcher
 bindsym $mod+d exec $menu
@@ -65,7 +66,7 @@ bindsym $mod+d exec $menu
 floating_modifier $mod normal
 
 # Reload the configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift_L+c reload
 
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift_L+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
@@ -198,9 +199,10 @@ input "type:keyboard" {
     xkb_options grp:alt_shift_toggle
 }
 
-default_border pixel 3
+default_border pixel 5
 for_window [title="^.*"] title_format ""
 default_floating_border pixel 3
+gaps inner 10
 
 set $volume_changed_sound paplay /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga
 
