@@ -11,6 +11,7 @@ SETUVAR _fisher_upgraded_to_4_4:\x1d
 SETUVAR _fisher_wfxr_2F_forgit_files:\x7e/\x2econfig/fish/conf\x2ed/bin\x1e\x7e/\x2econfig/fish/conf\x2ed/forgit\x2eplugin\x2efish\x1e\x7e/\x2econfig/fish/completions/_git\x2dforgit\x1e\x7e/\x2econfig/fish/completions/git\x2dforgit\x2ebash\x1e\x7e/\x2econfig/fish/completions/git\x2dforgit\x2efish
 SETUVAR _hydro_git_10088:master\x20\u2717\x20
 SETUVAR _hydro_git_109019:\x1d
+SETUVAR _hydro_git_129106:\x1d
 SETUVAR _hydro_git_13016:develop\x20\u2717\x20
 SETUVAR _hydro_git_22475:master\x20\u2717\x20
 SETUVAR _hydro_git_23553:\x1d
@@ -27,9 +28,8 @@ SETUVAR _hydro_git_4440:feature/COSHU\x2d139\x2dvideo\x2durls\x2dsollen\x2d\u00f
 SETUVAR _hydro_git_44565:\x1d
 SETUVAR _hydro_git_44809:master\x20
 SETUVAR _hydro_git_4592:master\x20
-SETUVAR _hydro_git_49382:feature/COSHU\x2d208\x2depg\x2dprogramm\x2dabfrage\x2deines\x2dein\x20
+SETUVAR _hydro_git_49382:feature/COSHU\x2d208\x2depg\x2dprogramm\x2dabfrage\x2deines\x2dein\x20\u2717\x20
 SETUVAR _hydro_git_5776:\x1d
-SETUVAR _hydro_git_65624:\x1d
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:blue
