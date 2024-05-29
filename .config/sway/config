@@ -68,11 +68,19 @@ floating_modifier $mod normal
 # Reload the configuration file
 bindsym $mod+Shift_L+c reload
 
-# Exit sway (logs you out of your Wayland session)
-bindsym $mod+Shift_L+e exec swaynag -t warning \
-  -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' \
-  -B 'Yes, exit sway' 'swaymsg exit'
-
+bindsym Control+$mod+Delete exec swaynag -t warning \
+        -m 'Hello. Do you really want to exit sway? This will end your Wayland session.' \
+        -b 'Suspend' 'systemctl suspend' \
+        -b 'Lock' '$lock' \
+        -b 'Shutdown' 'systemctl -i poweroff' \
+        -b 'Reboot' 'systemctl -i reboot' \
+        -b 'Yes, exit sway' 'swaymsg exit' \
+        --button-background=#FF9100 \
+        --button-border-size=3px \
+        --border=#FCC99D \
+        --text=#092E47 \
+        --font=Hack Nerd Font Mono 16 \
+        --background=#282828
 #
 # Moving around:
 #
