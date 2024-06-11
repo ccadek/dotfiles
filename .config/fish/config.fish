@@ -5,7 +5,8 @@ end
 set -gx EDITOR nvim
 set fish_greeting ""
 
-set -gx JDTLS_JVM_ARGS "-javaagent:$HOME/.local/share/java/lombok.jar"
+# download lombok from https://projectlombok.org/download
+set -gx JDTLS_JVM_ARGS "-javaagent:$HOME/.local/share/java/lombok-1.18.32.jar"
 set -gx nvm_default_version "v16.3.0"
 set -gx ANDROID_SDK /home/purzel/Android/Sdk
 set -gx forgit_checkout_commit zzzzzzzzgcooooooo
