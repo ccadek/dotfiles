@@ -13,7 +13,7 @@ set -gx forgit_checkout_commit zzzzzzzzgcooooooo
 fish_add_path -g -p $HOME/fvm/default/bin
 fish_add_path -g -p $HOME/go/bin
 
-source "$HOME/.cargo/env.fish"
+set -x PATH "$HOME/.cargo/bin" $PATH
 
 # docker config home
 # used to install docker-compose manually
