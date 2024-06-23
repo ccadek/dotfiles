@@ -14,4 +14,6 @@ end
 config.keys = require 'keybindings'
 config.hyperlink_rules = require 'hyperlinks'
 
+config.color_scheme = 'Catppuccin Mocha'
+
 return config
