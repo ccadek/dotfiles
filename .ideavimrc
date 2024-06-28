@@ -1,0 +1,20 @@
+" source .config/nvim/init.lua
+let mapleader = " "
+
+inoremap jj <Esc>
+inoremap JJ <Esc>
+set number relativenumber
+
+set hlsearch on
+set incsearch on
+set ic on
+
+set scrolloff = 10
+
+" delete into void. this will delete what you want, but not overwrite your register
+nmap <leader>d "_d
+vmap <leader>d "_d
+
+nmap <leader>y "+y
+vmap <leader>y "+y
+nmap <leader>Y "+Y
