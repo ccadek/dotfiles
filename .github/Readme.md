@@ -7,6 +7,7 @@ This dotfiles repository is administered via the bare git repository pattern. Se
 First ensure you have installed all these packages before cloning the repository
 
 - avizo
+- [bat](https://github.com/sharkdp/bat)
 - brightnessctl
 - curl
 - [fish](https://github.com/fish-shell/fish-shell)
