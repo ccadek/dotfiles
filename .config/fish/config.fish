@@ -23,6 +23,9 @@ set -gx DOCKER_CONFIG "$HOME/.docker"
 # initialize pyenv
 pyenv init - | source
 
+# source fzf
+fzf --fish | source
+
 # prompt setting
 
 set -U hydro_color_git red

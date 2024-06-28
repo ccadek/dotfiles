@@ -1,3 +1,3 @@
-function glg -w 'git log'
-    git log --stat
+function glg
+  _fzf_search_git_log
 end

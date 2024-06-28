@@ -1,3 +1,3 @@
-function gd --wraps='git diff'
-    git diff
+function gd
+  _fzf_search_git_status
 end
