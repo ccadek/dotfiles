@@ -41,3 +41,5 @@ set fish_function_path (path resolve $__fish_config_dir/functions/*/) $fish_func
 
 # add completion subdirs to fish_completion_path.
 set fish_complete_path (path resolve $__fish_config_dir/completions/*/) $fish_complete_path
+
+set -gx FZF_DEFAULT_OPTS "--bind up:preview-up,down:preview-down"
