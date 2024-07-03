@@ -10,6 +10,7 @@ First ensure you have installed all these packages before cloning the repository
 - [bat](https://github.com/sharkdp/bat)
 - brightnessctl
 - curl
+- [dive](https://github.com/wagoodman/dive)
 - [fish](https://github.com/fish-shell/fish-shell)
 - [fisher](https://github.com/jorgebucaran/fisher)
 - [foot](https://codeberg.org/dnkl/foot)
