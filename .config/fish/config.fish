@@ -3,6 +3,9 @@ if status is-interactive
 end
 
 set -gx EDITOR nvim
+
+set -gx MANPAGER "nvim +Man!"
+
 set fish_greeting ""
 
 # download lombok from https://projectlombok.org/download
