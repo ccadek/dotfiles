@@ -11,6 +11,8 @@ keybinds clear-defaults=true {
         bind "Alt k" "Alt Up" { MoveFocus "Up"; }
         bind "Alt =" "Alt +" { Resize "Increase"; }
         bind "Alt -" { Resize "Decrease"; }
+        bind "Alt t" { NewTab; }
+        bind "Alt o" { GoToNextTab; }
     }
 }
 
