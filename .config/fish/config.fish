@@ -14,11 +14,11 @@ set fish_function_path (path resolve $__fish_config_dir/functions/*/) $fish_func
 set fish_complete_path (path resolve $__fish_config_dir/completions/*/) $fish_complete_path
 
 
-set -gx ANDROID_SDK /home/purzel/Android/Sdk # download lombok from https://projectlombok.org/download
+set -gx ANDROID_SDK /home/purzel/Android/Sdk
 set -gx DOCKER_CONFIG "$HOME/.docker"
 set -gx EDITOR nvim
 set -gx FZF_DEFAULT_OPTS "--bind up:preview-up,down:preview-down"
-set -gx JDTLS_JVM_ARGS "-javaagent:$HOME/.local/share/java/lombok-1.18.32.jar"
+set -gx JDTLS_JVM_ARGS "-javaagent:$HOME/.local/share/java/lombok-1.18.32.jar" # download lombok from https://projectlombok.org/download
 set -gx MANPAGER "nvim +Man!"
 set -gx nvm_default_version "v16.3.0"
 set -gx STARSHIP_CONFIG "$HOME/.config/starship/starship.toml"
