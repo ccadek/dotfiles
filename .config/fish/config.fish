@@ -36,6 +36,8 @@ set -U hydro_color_pwd green
 set -U hydro_color_prompt blue
 set -U hydro_symbol_git_dirty " ✗"
 
+alias fix_camera='guvcview -d /dev/video0'
+
 #
 # The next two settings are taken from https://www.reddit.com/r/fishshell/comments/176ahss/tip_you_can_use_function_subfolders_with_this/.
 #
