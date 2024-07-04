@@ -11,6 +11,7 @@ First ensure you have installed all these packages before cloning the repository
 - brightnessctl
 - curl
 - [dive](https://github.com/wagoodman/dive)
+- [eza](https://github.com/eza-community/eza)
 - [fish](https://github.com/fish-shell/fish-shell)
 - [fisher](https://github.com/jorgebucaran/fisher)
 - [foot](https://codeberg.org/dnkl/foot)
@@ -18,6 +19,7 @@ First ensure you have installed all these packages before cloning the repository
 - nerd-fonts
 - nvm
 - pamixer
+- [starship](https://github.com/starship/starship)
 - [sway](https://github.com/swaywm/sway)
 
 # Cloning as bare repository
