@@ -100,6 +100,11 @@ alias jctl="journalctl -p 3 -xb"
 # the terminal rickroll
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
 
+### autocompletion should be case insensitive
+autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+
 # automatically ls after a cd
 function chpwd() {
     emulate -L zsh
@@ -127,6 +132,5 @@ npm() {
     npm "$@"
 }
 
-source /usr/share/nvm/init-nvm.sh
 source <(fzf --zsh)
 eval "$(starship init zsh)"
