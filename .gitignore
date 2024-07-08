@@ -1,3 +1,4 @@
 # This .gitignore exists for the bare git repository that keeps track of all my dotfiles
 # see https://github.com/ccadek/dotfiles2.git
 .cfg
+.config/nvim/lazy-lock.json
