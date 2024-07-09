@@ -103,6 +103,7 @@ alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/mas
 ### autocompletion should be case insensitive
 autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':autocomplete:*' min-input 4
 
 
 # automatically ls after a cd
