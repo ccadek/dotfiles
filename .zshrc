@@ -109,7 +109,7 @@ zstyle ':autocomplete:*' min-input 4
 # automatically ls after a cd
 function chpwd() {
     emulate -L zsh
-    ls -a
+    ls
 }
 
 # lazy load nvm 
