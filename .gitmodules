@@ -1,3 +1,9 @@
-[submodule ".config/alacritty/catppuccin/alacritty"]
-	path = .config/alacritty/catppuccin/alacritty
-	url = https://github.com/catppuccin/alacritty.git
+[submodule "/home/purzel/.config/zsh/plugins/zsh-autopair"]
+	path = /home/purzel/.config/zsh/plugins/zsh-autopair
+	url = https://github.com/hlissner/zsh-autopair
+[submodule "/home/purzel/.config/zsh/plugins/zsh-autsuggestions"]
+	path = /home/purzel/.config/zsh/plugins/zsh-autsuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "/home/purzel/.config/zsh/plugins/zsh-autosuggestions"]
+	path = /home/purzel/.config/zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
