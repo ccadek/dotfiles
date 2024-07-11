@@ -16,4 +16,11 @@ config.hyperlink_rules = require 'hyperlinks'
 
 config.color_scheme = 'Catppuccin Mocha'
 
+local mux = wezterm.mux
+
+wezterm.on('gui-startup', function()
+  local tab, pane, window = mux.spawn_window {}
+  window:gui_window():maximize()
+end)
+
 return config
