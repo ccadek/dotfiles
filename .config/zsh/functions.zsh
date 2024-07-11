@@ -6,6 +6,10 @@ function chpwd() {
     ls
 }
 
+wd() {
+    . $ZSH_PLUGIN_DIR/wd/wd.sh
+}
+
 # lazy load nvm 
 # taken from https://broken-by.me/lazy-load-nvm/
 nvm() {

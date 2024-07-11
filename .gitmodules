@@ -7,3 +7,6 @@
 [submodule "/home/purzel/.config/zsh/plugins/zsh-autosuggestions"]
 	path = /home/purzel/.config/zsh/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "/home/purzel/.config/zsh/plugins/wd"]
+	path = /home/purzel/.config/zsh/plugins/wd
+	url = https://github.com/mfaerevaag/wd.git
