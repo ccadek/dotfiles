@@ -1,5 +1,3 @@
-#!/bin/zsh
-
 export EDITOR="nvim"
 export VISUAL="nvim"
 export MANPAGER="nvim +Man!"
@@ -12,6 +10,7 @@ export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/java/lombok-1.18.32.jar" # 
 export nvm_default_version="v16.3.0"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 
+source "$HOME/.cargo/env"
 
 
 ### PATH
@@ -27,10 +26,6 @@ if [ -d "/var/lib/flatpak/exports/bin/" ] ;
   then PATH="/var/lib/flatpak/exports/bin/:$PATH"
 fi
 
-if [ -d "$HOME/.cargo" ] ; 
-  then PATH="$HOME/.cargo/bin:$PATH"
-fi
-
 if [ -d "$HOME/fvm/default/bin" ] ; 
   then PATH="$HOME/fvm/default/bin:$PATH"
 fi
@@ -38,6 +33,7 @@ fi
 if [ -d "$HOME/go/bin" ] ; 
   then PATH="$HOME/go/bin:$PATH"
 fi
+
 
 ### XDG environment variables 
 if [ -z "$XDG_CONFIG_HOME" ] ; then
@@ -52,6 +48,8 @@ if [ -z "$XDG_CACHE_HOME" ] ; then
     export XDG_CACHE_HOME="$HOME/.cache"
 fi
 
+
+### custom env vars
 if [ -d "$HOME/Android/Sdk" ] ; then
   export ANDROID_SDK="$HOME/Android/Sdk"
 fi
@@ -63,3 +61,4 @@ fi
 if [ -z  "$ZSH_PLUGIN_DIR" ] ; then
   export ZSH_PLUGIN_DIR="$ZSH_CONFIG_DIR/plugins"
 fi
+

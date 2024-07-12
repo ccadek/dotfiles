@@ -1,5 +1,3 @@
-source $HOME/.config/zsh/env.zsh
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
