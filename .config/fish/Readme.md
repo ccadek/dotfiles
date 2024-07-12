@@ -1,5 +1,4 @@
-jorgebucaran/fisher
-fischerling/plugin-wd
+# Installed plugins
 jorgebucaran/autopair.fish
 jorgebucaran/nvm.fish
 junegunn/fzf
