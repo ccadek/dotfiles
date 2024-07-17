@@ -11,10 +11,12 @@ for k, v in pairs(require 'flags') do
   config[k] = v
 end
 
-config.keys = require 'keybindings'
 config.hyperlink_rules = require 'hyperlinks'
-
 config.color_scheme = 'Catppuccin Mocha'
+
+local keybindings = require 'keybindings'
+config.keys = keybindings.key
+config.key_tables = keybindings.key_tables
 
 local mux = wezterm.mux
 
