@@ -3,7 +3,6 @@ keybinds clear-defaults=true {
         bind "Alt c" { Copy; }
     }
     shared_except "locked"  {
-        bind "Ctrl q" { Quit; }
         bind "Alt n" { NewPane; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
         bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
