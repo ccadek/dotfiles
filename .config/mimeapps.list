@@ -20,6 +20,7 @@ x-scheme-handler/mid=userapp-Thunderbird-JD9ET1.desktop;
 x-content/image-dcf=org.gnome.gThumb.Import.desktop;
 application/xml=nvim.desktop;
 application/x-fishscript=neovide.desktop;
+application/octet-stream=neovide.desktop;
 
 [Default Applications]
 x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
