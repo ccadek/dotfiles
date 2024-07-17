@@ -18,6 +18,7 @@ set -gx JDTLS_JVM_ARGS "-javaagent:$HOME/.local/share/java/lombok-1.18.32.jar" #
 set -gx MANPAGER "nvim +Man!"
 set -gx nvm_default_version "v16.3.0"
 set -gx STARSHIP_CONFIG "$HOME/.config/starship/starship.toml"
+set -gx VISUAL "nvim"
 set -gx PATH "$HOME/fvm/default/bin" $PATH
 set -gx PATH "$HOME/go/bin" $PATH
 set -gx PATH "$HOME/.local/share/JetBrains/Toolbox/scripts" $PATH
