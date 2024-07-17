@@ -18,4 +18,10 @@ return {
     mods = 'SHIFT',
     action = wezterm.action.ToggleFullScreen,
   },
+
+  {
+    key = 'Q',
+    mods = 'CTRL',
+    action = wezterm.action.ShowDebugOverlay,
+  },
 }
