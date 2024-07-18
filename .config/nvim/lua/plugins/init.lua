@@ -2,7 +2,6 @@ return {
   require 'plugins.autopairs',
   require 'plugins.comment',
   require 'plugins.git',
-  require 'plugins.keybindings',
   require 'plugins.lsp',
   require 'plugins.mini',
   require 'plugins.oil',
