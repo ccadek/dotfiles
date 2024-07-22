@@ -22,6 +22,7 @@ alias la='eza --group-directories-first -a'
 
 # git
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias g='git'
 alias ga='git add'
 alias gc='git commit'
 alias gca='git commit --amend'
