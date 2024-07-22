@@ -2,6 +2,7 @@ return {
   require 'plugins.autopairs',
   require 'plugins.comment',
   require 'plugins.git',
+  require 'plugins.hardtime',
   require 'plugins.lsp',
   require 'plugins.mini',
   require 'plugins.oil',
