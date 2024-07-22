@@ -38,7 +38,7 @@ function __wd_exit_warn
 end
 
 function __wd_read_warprc
-    cat $__wd_warprc
+    command cat $__wd_warprc
 end
 
 function __wd_help --argument command
