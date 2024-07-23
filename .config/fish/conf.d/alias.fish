@@ -6,6 +6,9 @@ alias fix_camera='guvcview -d /dev/video0'
 alias cat='bat'
 alias exi='exit'
 
+alias rm_node_modules='find . -name "node_modules" -exec rm -rf \'{}\' +'
+alias rm_package_lock='find . -name "package-lock.json" -exec rm -rf \'{}\' +'
+
 # containers
 alias d='docker'
 alias crmdb-start='docker run -d -e POSTGRES_PASSWORD=78,3XdFc4]^b^R~@A -e POSTGRES_USER=crmUser -p 5431:5432 --name crmdb postgres:12-alpine'
