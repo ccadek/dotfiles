@@ -16,6 +16,49 @@ return {
     -- - sr)'  - [S]urround [R]eplace [)] [']
     require('mini.surround').setup()
 
+    local starter = require 'mini.starter'
+
+    local basicActions = 'Basic actions'
+
+    -- function to add items to mini.starter
+    --
+    local function openItemAction(configName)
+      return {
+        name = configName,
+        action = 'e ~/.config/' .. configName, -- open path
+        section = 'Bookmarks',
+      }
+    end
+
+    starter.setup {
+      header = '                                                                       \n'
+        .. '                                                                     \n'
+        .. '       ████ ██████           █████      ██                     \n'
+        .. '      ███████████             █████                             \n'
+        .. '      █████████ ███████████████████ ███   ███████████   \n'
+        .. '     █████████  ███    █████████████ █████ ██████████████   \n'
+        .. '    █████████ ██████████ █████████ █████ █████ ████ █████   \n'
+        .. '  ███████████ ███    ███ █████████ █████ █████ ████ █████  \n'
+        .. ' ██████  █████████████████████ ████ █████ █████ ████ ██████ \n'
+        .. '                                                                       ',
+      items = {
+        openItemAction 'bat',
+        openItemAction 'fish',
+        openItemAction 'nvim',
+        openItemAction 'wezterm',
+        openItemAction 'zellij',
+        starter.sections.telescope(),
+        { name = 'Edit new buffer', action = 'enew', section = basicActions },
+        { name = 'Quit Neovim', action = 'qall', section = basicActions },
+      },
+      footer = '',
+      content_hooks = {
+        starter.gen_hook.adding_bullet(),
+        starter.gen_hook.indexing('all', { basicActions }),
+        starter.gen_hook.aligning('center', 'center'),
+      },
+    }
+
     -- Simple and easy statusline.
     --  You could remove this setup call if you don't like it,
     --  and try some other statusline plugin
