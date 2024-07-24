@@ -13,12 +13,14 @@ First ensure you have installed all these packages before cloning the repository
 - [dive](https://github.com/wagoodman/dive)
 - [eza](https://github.com/eza-community/eza)
 - [fish](https://github.com/fish-shell/fish-shell)
+- grim
 - [fisher](https://github.com/jorgebucaran/fisher)
 - [foot](https://codeberg.org/dnkl/foot)
 - neovim
 - nerd-fonts
 - nvm
 - pamixer
+- slurp
 - [starship](https://github.com/starship/starship)
 - [sway](https://github.com/swaywm/sway)
 

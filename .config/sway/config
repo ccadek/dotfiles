@@ -85,6 +85,10 @@ bindsym Control+$mod+Delete exec swaynag -t warning \
         --text=#092E47 \
         --font=Hack Nerd Font Mono 16 \
         --background=#282828
+
+#bindsym --to-code Print exec swaynag -m "$XDG_PICTURES_DIR"
+bindsym --to-code Print exec grim -g "$(slurp)" ~/Pictures/Screenshots/$(date +%Hh_%Mm_%Ss_%d_%B_%Y).png
+
 #
 # Moving around:
 #
