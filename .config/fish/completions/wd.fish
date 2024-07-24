@@ -15,7 +15,7 @@ function __wd_using_command
 end
 
 function __wd_complete_warppoints
-   echo (cat (wd -q warppoints-file) | cut -d : -f 1)
+   echo (command cat (wd -q warppoints-file) | cut -d : -f 1)
 end
 
 #Options
