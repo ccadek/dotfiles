@@ -1,3 +1,15 @@
+local basicActions = 'Basic actions'
+
+-- function to add items to mini.starter
+--
+local function openItemAction(configName)
+  return {
+    name = configName,
+    action = 'e ~/.config/' .. configName, -- open path
+    section = 'Bookmarks',
+  }
+end
+
 return {
   'echasnovski/mini.nvim',
   config = function()
@@ -17,18 +29,6 @@ return {
     require('mini.surround').setup()
 
     local starter = require 'mini.starter'
-
-    local basicActions = 'Basic actions'
-
-    -- function to add items to mini.starter
-    --
-    local function openItemAction(configName)
-      return {
-        name = configName,
-        action = 'e ~/.config/' .. configName, -- open path
-        section = 'Bookmarks',
-      }
-    end
 
     starter.setup {
       header = '                                                                       \n'
@@ -51,6 +51,7 @@ return {
         { name = 'Edit new buffer', action = 'enew', section = basicActions },
         { name = 'Quit Neovim', action = 'qall', section = basicActions },
       },
+      evaluate_single = true,
       footer = '',
       content_hooks = {
         starter.gen_hook.adding_bullet(),
@@ -59,10 +60,8 @@ return {
       },
     }
 
-    -- Simple and easy statusline.
-    --  You could remove this setup call if you don't like it,
-    --  and try some other statusline plugin
     local statusline = require 'mini.statusline'
+
     -- set use_icons to true if you have a Nerd Font
     statusline.setup { use_icons = vim.g.have_nerd_font }
 
