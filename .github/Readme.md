@@ -38,6 +38,9 @@ git clone --bare git@github.com:ccadek/dotfiles.git $HOME/.cfg
 # create a temporary alias for config.
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
+# Make sure you only see changes from files that are tracked by the repo
+config config --local status.showUntrackedFiles no
+
 # No we can actually pull the repository
 config checkout
 ```
