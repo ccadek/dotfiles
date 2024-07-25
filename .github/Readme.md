@@ -1,6 +1,6 @@
 # Purzel's Dotfiles
 
-This dotfiles repository is administered via the bare git repository pattern. See [Atlassian - Dotfiles: Best way to store in a bare git repository ](https://www.atlassian.com/git/tutorials/dotfiles).
+This dotfiles repository is administered via the bare git repository pattern. See [Atlassian - Dotfiles: Best way to store in a bare git repository ](https://www.atlassian.com/git/tutorials/dotfiles)
 
 # Prerequisites
 
@@ -46,3 +46,26 @@ config checkout
 ```
 
 You will most likely have issues with pulling. That is ok, with `config status` you can see which files are conflicting and either back them up, or completely remove them. Afterwards run the command again, it should now succeed.
+
+## Initializing pre-commit hooks
+
+These dotfiles are using [pre-commit](https://pre-commit.com/) hooks to make sure all dotfiles are consistently formatted. This is a WIP and I will see how far I will take this. As pre-commit usually expects a regular repo we have to trick around a little bit.
+The way I initialized my setup was with [tjex.net's guide](https://tjex.net/hacks/neovim-using-pre-commit-and-gitleaks-with-dotfiles/). In case the site goes offline here the quick rundown:
+
+```bash
+# First install pre-commit
+
+cd ~/.cfg
+git worktree add main
+cd main
+cp ~/.pre-commit-config.yml . # copy existing pre-commit file into cfg/main/.pre-commit-config.yml
+
+# for the next two commands it is important you stay in ~/.cfg/main/
+pre-commit autoupdate
+pre-commit install
+cd ~
+
+# (optional) clean up worktree
+cd ~/.cfg
+git worktree remove main
+```
