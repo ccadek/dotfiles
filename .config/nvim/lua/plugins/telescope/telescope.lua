@@ -65,6 +65,16 @@ return {
           require('telescope.themes').get_dropdown(),
         },
       },
+      pickers = {
+        find_files = {
+          mappings = {
+            i = {
+              ['<C-j>'] = require('telescope.actions').move_selection_next,
+              ['<C-k>'] = require('telescope.actions').move_selection_previous,
+            },
+          },
+        },
+      },
     }
 
     -- Enable Telescope extensions if they are installed
