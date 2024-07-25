@@ -4,6 +4,7 @@ return {
   require 'plugins.git',
   require 'plugins.hardtime',
   require 'plugins.lsp',
+  require 'plugins.markdown',
   require 'plugins.mini',
   require 'plugins.oil',
   require 'plugins.telescope',
