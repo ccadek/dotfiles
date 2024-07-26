@@ -12,30 +12,7 @@ export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 
 source "$HOME/.cargo/env"
 
-
-### PATH
-if [ -d "$HOME/.bin" ] ;
-  then PATH="$HOME/.bin:$PATH"
-fi
-
-if [ -d "$HOME/.local/bin" ] ;
-  then PATH="$HOME/.local/bin:$PATH"
-fi
-
-if [ -d "/var/lib/flatpak/exports/bin/" ] ;
-  then PATH="/var/lib/flatpak/exports/bin/:$PATH"
-fi
-
-if [ -d "$HOME/fvm/default/bin" ] ; 
-  then PATH="$HOME/fvm/default/bin:$PATH"
-fi
-
-if [ -d "$HOME/go/bin" ] ; 
-  then PATH="$HOME/go/bin:$PATH"
-fi
-
-
-### XDG environment variables 
+### XDG environment variables
 if [ -z "$XDG_CONFIG_HOME" ] ; then
     export XDG_CONFIG_HOME="$HOME/.config"
 fi
@@ -62,3 +39,19 @@ if [ -z  "$ZSH_PLUGIN_DIR" ] ; then
   export ZSH_PLUGIN_DIR="$ZSH_CONFIG_DIR/plugins"
 fi
 
+### PATH
+if [ -d "$HOME/.bin" ] ;
+  then PATH="$HOME/.bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ;
+  then PATH="$HOME/.local/bin:$PATH"
+fi
+
+if [ -d "/var/lib/flatpak/exports/bin/" ] ;
+  then PATH="/var/lib/flatpak/exports/bin/:$PATH"
+fi
+
+if [ -d "$HOME/go/bin" ] ;
+  then PATH="$HOME/go/bin:$PATH"
+fi
