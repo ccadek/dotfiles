@@ -6,7 +6,7 @@ use_logical_path = true
 format = "[$path]($style)[$read_only]($read_only_style) "
 repo_root_format = "[$before_root_path]($before_repo_root_style)[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
 style = "cyan bold"
-disabled = false 
+disabled = false
 read_only = "🔒"
 read_only_style = "red"
 truncation_symbol = ""
@@ -23,3 +23,8 @@ disabled = true
 
 [package]
 disabled = true
+
+[shell]
+disabled = false
+bash_indicator = "bash"
+fish_indicator = ""
