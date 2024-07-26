@@ -10,6 +10,10 @@ if [ -z "$XDG_CACHE_HOME" ]
     set -gx XDG_CACHE_HOME "$HOME/.cache"
 end
 
+if [ -z "$FVM_CACHE_PATH" ]
+    set -gx FVM_CACHE_PATH "$HOME/.fvm-installed"
+end
+
 set -gx ANDROID_SDK /home/purzel/Android/Sdk
 set -gx DOCKER_CONFIG "$HOME/.docker"
 set -gx EDITOR nvim
@@ -19,6 +23,6 @@ set -gx MANPAGER "nvim +Man!"
 set -gx nvm_default_version "v16.3.0"
 set -gx STARSHIP_CONFIG "$HOME/.config/starship/starship.toml"
 set -gx VISUAL "nvim"
-set -gx PATH "$HOME/fvm/default/bin" $PATH
 set -gx PATH "$HOME/go/bin" $PATH
 set -gx PATH "$HOME/.local/share/JetBrains/Toolbox/scripts" $PATH
+set -gx PATH "$FVM_CACHE_PATH/default/bin" $PATH

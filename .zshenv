@@ -31,6 +31,10 @@ if [ -d "$HOME/Android/Sdk" ] ; then
   export ANDROID_SDK="$HOME/Android/Sdk"
 fi
 
+if [ -z "$FVM_CACHE_PATH" ] ; then
+  export FVM_CACHE_PATH="$HOME/.fvm-installed"
+fi
+
 if [ -z "$ZSH_CONFIG_DIR" ] ; then
   export ZSH_CONFIG_DIR="$XDG_CONFIG_HOME/zsh"
 fi
@@ -38,6 +42,7 @@ fi
 if [ -z  "$ZSH_PLUGIN_DIR" ] ; then
   export ZSH_PLUGIN_DIR="$ZSH_CONFIG_DIR/plugins"
 fi
+
 
 ### PATH
 if [ -d "$HOME/.bin" ] ;
@@ -54,4 +59,8 @@ fi
 
 if [ -d "$HOME/go/bin" ] ;
   then PATH="$HOME/go/bin:$PATH"
+fi
+
+if [ -d "$FVM_CACHE_PATH/default/bin" ] ;
+  then PATH="$FVM_CACHE_PATH/default/bin:$PATH"
 fi
