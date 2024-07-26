@@ -1,4 +1,5 @@
-local basicActions = 'Basic actions'
+local basicActionsSection = 'Basic actions'
+local bookMarksSection = 'Bookmarks'
 
 -- function to add items to mini.starter
 --
@@ -6,7 +7,7 @@ local function openItemAction(configName)
   return {
     name = configName,
     action = 'e ~/.config/' .. configName, -- open path
-    section = 'Bookmarks',
+    section = bookMarksSection,
   }
 end
 
@@ -47,21 +48,19 @@ return {
         openItemAction 'nvim',
         openItemAction 'wezterm',
         openItemAction 'zellij',
-        starter.sections.telescope(),
-        { name = 'Edit new buffer', action = 'enew', section = basicActions },
-        { name = 'Quit Neovim', action = 'qall', section = basicActions },
+        --starter.sections.telescope(),
+        { name = 'Edit new buffer', action = 'enew', section = basicActionsSection },
+        { name = 'Quit Neovim', action = 'qall', section = basicActionsSection },
       },
       evaluate_single = true,
       footer = '',
       content_hooks = {
         starter.gen_hook.adding_bullet(),
-        starter.gen_hook.indexing('all', { basicActions }),
-        starter.gen_hook.aligning('center', 'center'),
+        starter.gen_hook.aligning('center', 'top'),
       },
     }
 
     local statusline = require 'mini.statusline'
-
     -- set use_icons to true if you have a Nerd Font
     statusline.setup { use_icons = vim.g.have_nerd_font }
 
@@ -72,7 +71,6 @@ return {
     statusline.section_location = function()
       return '%2l:%-2v'
     end
-
     -- ... and there is more!
     --  Check out: https://github.com/echasnovski/mini.nvim
   end,
