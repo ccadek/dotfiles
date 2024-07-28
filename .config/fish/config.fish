@@ -9,4 +9,5 @@ if status is-interactive && set --query nvm_default_version && ! set --query nvm
 end
 
 fzf --fish | source
+zoxide init fish | source
 starship init fish | source
