@@ -10,7 +10,6 @@ export JDTLS_JVM_ARGS="-javaagent:$HOME/.local/share/java/lombok-1.18.32.jar" # 
 export nvm_default_version="v16.3.0"
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 
-source "$HOME/.cargo/env"
 
 ### XDG environment variables
 if [ -z "$XDG_CONFIG_HOME" ] ; then
@@ -63,4 +62,8 @@ fi
 
 if [ -d "$FVM_CACHE_PATH/default/bin" ] ;
   then PATH="$FVM_CACHE_PATH/default/bin:$PATH"
+fi
+
+if [ -d "$HOME/.cargo/bin" ] ;
+  then PATH="$HOME/.cargo/env:$PATH"
 fi
