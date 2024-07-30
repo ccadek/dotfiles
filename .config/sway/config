@@ -97,7 +97,7 @@ bindsym $mod+Shift_L+$left move left
 bindsym $mod+Shift_L+$down move down
 bindsym $mod+Shift_L+$up move up
 bindsym $mod+Shift_L+$right move right
-    
+
 # Move your focus around
 bindsym $mod+$left focus left
 bindsym $mod+$down focus down
@@ -220,7 +220,7 @@ input "type:keyboard" {
 default_border pixel 5
 for_window [title="^.*"] title_format ""
 default_floating_border pixel 3
-gaps inner 10
+gaps inner 3
 
 set $volume_changed_sound paplay /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga
 
