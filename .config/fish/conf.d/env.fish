@@ -14,6 +14,11 @@ if [ -z "$FVM_CACHE_PATH" ]
     set -gx FVM_CACHE_PATH "$HOME/.fvm-installed"
 end
 
+if not contains "$HOME/.cargo/bin" $PATH && [ -e "$HOME/.cargo/bin" ]
+    # Prepending path in case a system-installed rustc needs to be overridden
+    set -gx PATH "$HOME/.cargo/bin" $PATH
+end
+
 set -gx ANDROID_SDK /home/purzel/Android/Sdk
 set -gx DOCKER_CONFIG "$HOME/.docker"
 set -gx EDITOR nvim
