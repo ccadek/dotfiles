@@ -3,10 +3,15 @@ status is-interactive || exit
 # utiltity to reset webcam hardware defaults. Useful so far whenever the camera decides to print out a white screen
 alias fix_camera='guvcview -d /dev/video0'
 
+# use bat instead of cat
 alias cat='bat'
+
 alias exi='exit'
 
+# recursively delete all node_modules folder from $CWD
 alias rm_node_modules='find . -name "node_modules" -exec rm -rf \'{}\' +'
+
+# recursively delete all package-lock.json files from $CWD
 alias rm_package_lock='find . -name "package-lock.json" -exec rm -rf \'{}\' +'
 
 # containers
@@ -43,3 +48,6 @@ alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 
+# navigation
+alias ..='cd ..'
+alias ...='cd .. && cd ..'
