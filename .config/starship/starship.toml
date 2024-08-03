@@ -15,8 +15,8 @@ use_os_path_sep = true
 
 [java]
 disabled = false
-style = '#ED8B00'
-symbol = ' '
+style = "#ED8B00"
+symbol = " "
 
 [gradle]
 disabled = true
