@@ -6,7 +6,7 @@
 # because `cd` takes too long...
 #
 # This script is heavily influenced by :
-# @github.com/mfaerevaag/wd 
+# @github.com/mfaerevaag/wd
 #
 # And it is designed to be compatible with the original wd.
 #
@@ -139,7 +139,7 @@ function __wd_help --argument command
             echo "Remove warp points to nonexistent directories"
             echo
             echo "Usage:"
-            echo "      wd clean" 
+            echo "      wd clean"
 
 
         case "clean!"
@@ -292,7 +292,7 @@ function __wd_path
             end
         end
     end
-    if test $found = "false" 
+    if test $found = "false"
         set __wd_exit_status 1
     end
 end
@@ -449,7 +449,7 @@ function wd --description 'warp directory'
              end
         switch (count $argv)
         case 0 1
-            __wd_help ""
+            cd $HOME
             return
         case 2
             __wd_help $argv[2]
