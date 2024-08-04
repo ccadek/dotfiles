@@ -47,6 +47,13 @@ config checkout
 
 You will most likely have issues with pulling. That is ok, with `config status` you can see which files are conflicting and either back them up, or completely remove them. Afterwards run the command again, it should now succeed.
 
+# After first installation
+
+### bat
+
+bat is configured with the [Catppuccin Mocha](https://github.com/catppuccin/bat) theme in `.config/bat`. In order for bat to really use that theme run `bat cache --build`.
+
+
 ## Initializing pre-commit hooks
 
 These dotfiles are using [pre-commit](https://pre-commit.com/) hooks to make sure all dotfiles are consistently formatted. This is a WIP and I will see how far I will take this. As pre-commit usually expects a regular repo we have to trick around a little bit.
