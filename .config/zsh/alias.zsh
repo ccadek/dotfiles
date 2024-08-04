@@ -6,6 +6,12 @@ alias fix_camera='guvcview -d /dev/video0'
 alias cat='bat'
 alias exi='exit'
 
+
+# navigation
+alias ..='cd ..'
+alias ...='cd .. && cd ..'
+
+
 # containers
 alias d='docker'
 alias crmdb-start='docker run -d -e POSTGRES_PASSWORD=78,3XdFc4]^b^R~@A -e POSTGRES_USER=crmUser -p 5431:5432 --name crmdb postgres:12-alpine'
@@ -15,10 +21,12 @@ alias dpsp='docker ps --format "table {{.Names}}\\t{{.Image}}\\t{{.Ports}}\\t{{.
 alias p='podman'
 alias temp-shell='docker run -it --rm ubuntu bash'
 
+
 # ls
 alias ls='eza --group-directories-first'
 alias ll='eza --group-directories-first -lh'
 alias la='eza --group-directories-first -a'
+
 
 # git
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
@@ -34,6 +42,7 @@ alias gp='git push'
 alias gsd='git stash && git stash drop'
 alias gst='git status'
 
+
 # neovim
 alias v="nvim"
 alias vi="nvim"
@@ -42,6 +51,14 @@ alias vim="nvim"
 
 # get error messages from journalctl
 alias jctl="journalctl -p 3 -xb"
+
+
+# recursively delete all node_modules folder from $CWD
+alias rm_node_modules="find . -name \"node_modules\" -exec rm -rf \'{}\' +"
+
+# recursively delete all package-lock.json files from $CWD
+alias rm_package_lock="find . -name \"package-lock.json\" -exec rm -rf \'{}\' +"
+
 
 # the terminal rickroll
 alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
