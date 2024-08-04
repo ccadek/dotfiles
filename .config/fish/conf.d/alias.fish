@@ -51,3 +51,6 @@ alias vim='nvim'
 # navigation
 alias ..='cd ..'
 alias ...='cd .. && cd ..'
+
+# the terminal rickroll
+alias rr='curl -s -L https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash'
