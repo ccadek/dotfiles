@@ -8,5 +8,6 @@ if status is-interactive && set --query nvm_default_version && ! set --query nvm
     nvm use --silent $nvm_default_version
 end
 
+pyenv init - | source
 fzf --fish | source
 starship init fish | source

@@ -20,6 +20,7 @@ First ensure you have installed all these packages before cloning the repository
 - nerd-fonts
 - nvm
 - pamixer
+- pyenv
 - slurp
 - [starship](https://github.com/starship/starship)
 - [sway](https://github.com/swaywm/sway)
@@ -52,7 +53,6 @@ You will most likely have issues with pulling. That is ok, with `config status` 
 ### bat
 
 bat is configured with the [Catppuccin Mocha](https://github.com/catppuccin/bat) theme in `.config/bat`. In order for bat to really use that theme run `bat cache --build`.
-
 
 ## Initializing pre-commit hooks
 

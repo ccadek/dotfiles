@@ -2,3 +2,4 @@
 # see https://github.com/ccadek/dotfiles2.git
 .cfg
 .config/nvim/lazy-lock.json
+.config/fish/fish_variables
