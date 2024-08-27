@@ -1,4 +1,4 @@
-# Purzel's Dotfiles
+# My Dotfiles
 
 This dotfiles repository is administered via the bare git repository pattern. See [Atlassian - Dotfiles: Best way to store in a bare git repository ](https://www.atlassian.com/git/tutorials/dotfiles)
 
@@ -14,7 +14,6 @@ First ensure you have installed all these packages before cloning the repository
 - [eza](https://github.com/eza-community/eza)
 - [fish](https://github.com/fish-shell/fish-shell)
 - grim
-- [fisher](https://github.com/jorgebucaran/fisher)
 - [foot](https://codeberg.org/dnkl/foot)
 - neovim
 - nerd-fonts
@@ -44,13 +43,19 @@ config config --local status.showUntrackedFiles no
 
 # No we can actually pull the repository
 config checkout
+
+# Ensure all dependencies are installed
+sudo pacman -S avizo bat brightnessctl curl dive eza fish grim neovim nerd-fonts pyenv slurp starship sway
+
+# Change shell to fish to current user
+chsh -s $(which fish)
 ```
 
 You will most likely have issues with pulling. That is ok, with `config status` you can see which files are conflicting and either back them up, or completely remove them. Afterwards run the command again, it should now succeed.
 
 # After first installation
 
-### bat
+## bat
 
 bat is configured with the [Catppuccin Mocha](https://github.com/catppuccin/bat) theme in `.config/bat`. In order for bat to really use that theme run `bat cache --build`.
 
@@ -61,6 +66,7 @@ The way I initialized my setup was with [tjex.net's guide](https://tjex.net/hack
 
 ```bash
 # First install pre-commit
+sudo pacman -S pre-commit
 
 cd ~/.cfg
 git worktree add main
