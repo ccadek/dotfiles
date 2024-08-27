@@ -54,6 +54,9 @@ chsh -s $(which fish)
 You will most likely have issues with pulling. That is ok, with `config status` you can see which files are conflicting and either back them up, or completely remove them. Afterwards run the command again, it should now succeed.
 
 # After first installation
+## Gnome Alt+Tab should not group apps
+
+Per default Gnome always groups several instances of the application together. In order to fix this open the *Settings* application and go to `Keyboard > View and customize Shortcuts`, look for `Switch windows` and replace *Alt+Tab*.
 
 ## bat
 
