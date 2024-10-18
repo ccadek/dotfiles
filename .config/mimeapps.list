@@ -21,6 +21,8 @@ x-content/image-dcf=org.gnome.gThumb.Import.desktop;
 application/xml=nvim.desktop;
 application/x-fishscript=neovide.desktop;
 application/octet-stream=neovide.desktop;
+x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
+x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
 
 [Default Applications]
 x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
