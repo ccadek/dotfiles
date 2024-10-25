@@ -23,6 +23,12 @@ application/x-fishscript=neovide.desktop;
 application/octet-stream=neovide.desktop;
 x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
 x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
+x-scheme-handler/http=firefox-developer-edition.desktop;firefox.desktop;
+text/html=firefox-developer-edition.desktop;firefox.desktop;
+application/xhtml+xml=firefox-developer-edition.desktop;firefox.desktop;
+x-scheme-handler/https=firefox-developer-edition.desktop;firefox.desktop;
+x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
+x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
 
 [Default Applications]
 x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
