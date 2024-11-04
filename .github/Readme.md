@@ -45,7 +45,7 @@ config config --local status.showUntrackedFiles no
 config checkout
 
 # Ensure all dependencies are installed
-sudo pacman -S avizo bat brightnessctl curl dive eza fish grim neovim nerd-fonts pyenv slurp starship sway
+sudo pacman -S avizo bat brightnessctl curl dive eza fish grim jq neovim nerd-fonts pyenv slurp starship sway
 
 # Change shell to fish to current user
 chsh -s $(which fish)
@@ -54,9 +54,10 @@ chsh -s $(which fish)
 You will most likely have issues with pulling. That is ok, with `config status` you can see which files are conflicting and either back them up, or completely remove them. Afterwards run the command again, it should now succeed.
 
 # After first installation
+
 ## Gnome Alt+Tab should not group apps
 
-Per default Gnome always groups several instances of the application together. In order to fix this open the *Settings* application and go to `Keyboard > View and customize Shortcuts`, look for `Switch windows` and replace *Alt+Tab*.
+Per default Gnome always groups several instances of the application together. In order to fix this open the _Settings_ application and go to `Keyboard > View and customize Shortcuts`, look for `Switch windows` and replace _Alt+Tab_.
 
 ## bat
 
