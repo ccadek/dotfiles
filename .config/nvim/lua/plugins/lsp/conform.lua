@@ -27,6 +27,7 @@ return { -- Autoformat
     formatters_by_ft = {
       lua = { 'stylua' },
       markdown = { 'prettierd', 'prettier' },
+      json = { 'jq' },
       -- Conform can also run multiple formatters sequentially
       -- python = { "isort", "black" },
       --
