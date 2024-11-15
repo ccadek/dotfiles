@@ -63,6 +63,14 @@ Per default Gnome always groups several instances of the application together. I
 
 bat is configured with the [Catppuccin Mocha](https://github.com/catppuccin/bat) theme in `.config/bat`. In order for bat to really use that theme run `bat cache --build`.
 
+## Enable host.docker.internal
+
+When using Docker in Windows, you can use the DNS entry _host.docker.internal_ as a DNS to access the hosts localhost from within the docker container. In order to enable this in Linux add the following entry in `/etc/hosts`
+
+```/etc/hosts
+ 172.17.0.1 host.docker.internal
+```
+
 ## Initializing pre-commit hooks
 
 These dotfiles are using [pre-commit](https://pre-commit.com/) hooks to make sure all dotfiles are consistently formatted. This is a WIP and I will see how far I will take this. As pre-commit usually expects a regular repo we have to trick around a little bit.
