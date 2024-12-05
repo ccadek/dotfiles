@@ -1,5 +1,6 @@
 return {
   require 'plugins.autopairs',
+  require 'plugins.comfortable-motion',
   require 'plugins.comment',
   require 'plugins.git',
   require 'plugins.hardtime',
