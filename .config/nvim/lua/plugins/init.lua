@@ -7,6 +7,7 @@ return {
   require 'plugins.markdown',
   require 'plugins.mini',
   require 'plugins.oil',
+  require 'plugins.smear-cursor',
   require 'plugins.telescope',
   require 'plugins.treesitter',
   require 'plugins.ui',
