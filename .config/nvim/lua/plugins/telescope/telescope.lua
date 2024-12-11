@@ -59,6 +59,7 @@ return {
           'node_modules',
           '.git',
         },
+        path_display = { 'smart' },
       },
       extensions = {
         ['ui-select'] = {
