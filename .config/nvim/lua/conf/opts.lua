@@ -59,3 +59,7 @@ vim.opt.scrolloff = 20
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
+
+-- use spaces instead of tabs per default
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
