@@ -50,6 +50,7 @@ alias vi='nvim'
 alias vim='nvim'
 
 # navigation
+alias c='cd'
 alias ..='cd ..'
 alias ...='cd .. && cd ..'
 
