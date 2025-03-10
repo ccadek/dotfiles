@@ -71,6 +71,15 @@ When using Docker in Windows, you can use the DNS entry _host.docker.internal_ a
  172.17.0.1 host.docker.internal
 ```
 
+## SSH Keep Alive
+
+Per default SSH connections will automatically disconnect after a certain time. In order to keep the SSH connection open indefinitely, add the following line to `~/.ssh/config`
+
+```~/.ssh/config
+Host *
+    ServerAliveInterval 240
+```
+
 ## Initializing pre-commit hooks
 
 These dotfiles are using [pre-commit](https://pre-commit.com/) hooks to make sure all dotfiles are consistently formatted. This is a WIP and I will see how far I will take this. As pre-commit usually expects a regular repo we have to trick around a little bit.
