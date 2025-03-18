@@ -24,9 +24,9 @@ alias p='podman'
 alias temp-shell='docker run -it --rm ubuntu bash'
 
 # ls
-alias ls='eza --group-directories-first'
-alias ll='eza --group-directories-first -lh'
-alias la='eza --group-directories-first -a'
+alias ls='eza --icons --group-directories-first'
+alias ll='eza --icons --group-directories-first -lh'
+alias la='eza --icons --group-directories-first -a'
 
 # git
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
