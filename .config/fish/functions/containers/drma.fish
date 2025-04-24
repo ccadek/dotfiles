@@ -1,5 +1,7 @@
 function drma
-    docker rm $(docker ps -a --format '{{.ID}}')
+
+    docker rm $(docker ps --filter "status=exited" -q)
+
     for option in $argv
         switch "$option"
             case -a
