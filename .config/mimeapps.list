@@ -5,14 +5,8 @@ video/mp4=org.gnome.Totem.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-1NXRX0.desktop;
 application/json=nvim.desktop;
 application/x-ms-dos-executable=wine.desktop;
-x-scheme-handler/chrome=firefox.desktop;
-application/x-extension-htm=firefox.desktop;
-application/x-extension-html=firefox.desktop;
-application/x-extension-shtml=firefox.desktop;
-application/x-extension-xhtml=firefox.desktop;
-application/x-extension-xht=firefox.desktop;
 text/x-log=nvim.desktop;
-text/csv=nvim.desktop;libreoffice-calc.desktop;
+text/csv=nvim.desktop;libreoffice-calc.desktop
 application/x-cd-image=gnome-disk-image-writer.desktop;
 application/geo+json=nvim.desktop;
 x-scheme-handler/mailto=userapp-Thunderbird-JD9ET1.desktop;
@@ -23,12 +17,13 @@ application/x-fishscript=neovide.desktop;
 application/octet-stream=neovide.desktop;
 x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
 x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
-x-scheme-handler/http=firefox-developer-edition.desktop;firefox.desktop;
-text/html=firefox-developer-edition.desktop;firefox.desktop;
-application/xhtml+xml=firefox-developer-edition.desktop;firefox.desktop;
-x-scheme-handler/https=firefox-developer-edition.desktop;firefox.desktop;
+x-scheme-handler/http=firefox.desktop;firefox-developer-edition.desktop;chromium.desktop;
+text/html=firefox-developer-edition.desktop;firefox.desktop;chromium.desktop;
+application/xhtml+xml=firefox-developer-edition.desktop;chromium.desktop;firefox.desktop;
+x-scheme-handler/https=firefox.desktop;firefox-developer-edition.desktop;chromium.desktop;
 x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop;
 x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop;
+x-scheme-handler/chrome=firefox.desktop;
 
 [Default Applications]
 x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
@@ -144,5 +139,8 @@ x-scheme-handler/tel=org.gnome.Shell.Extensions.GSConnect.desktop
 x-scheme-handler/sms=org.gnome.Shell.Extensions.GSConnect.desktop
 application/x-fishscript=neovide.desktop
 hoppscotch=hoppscotch-handler.desktop
+text/csv=visual-studio-code.desktop
+x-scheme-handler/about=chromium.desktop
+x-scheme-handler/unknown=chromium.desktop
 
 [Removed Associations]
