@@ -12,7 +12,7 @@ local function openItemAction(configName)
 end
 
 return {
-  'echasnovski/mini.nvim',
+  'nvim-mini/mini.nvim',
   config = function()
     -- Better Around/Inside textobjects
     --
