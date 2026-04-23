@@ -25,4 +25,6 @@ wezterm.on('gui-startup', function()
   window:gui_window():maximize()
 end)
 
+config.enable_wayland = true
+
 return config
