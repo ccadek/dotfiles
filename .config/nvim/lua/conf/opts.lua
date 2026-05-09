@@ -63,3 +63,5 @@ vim.opt.hlsearch = true
 -- use spaces instead of tabs per default
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+
+vim.opt.termguicolors = true
