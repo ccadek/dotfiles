@@ -45,7 +45,7 @@ config config --local status.showUntrackedFiles no
 config checkout
 
 # Ensure all dependencies are installed
-sudo pacman -S avizo bat brightnessctl curl dive eza fish grim jq neovim nerd-fonts pyenv slurp starship sway
+sudo pacman -S bat brightnessctl curl dive eza fish fzf grim jq neovim nerd-fonts nvm pyenv slurp starship sway wezterm
 
 # Change shell to fish to current user
 chsh -s $(which fish)
