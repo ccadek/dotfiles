@@ -1,4 +1,4 @@
 return {
-  require 'conf.keybindings',
   require 'conf.opts',
+  require 'conf.keybindings',
 }

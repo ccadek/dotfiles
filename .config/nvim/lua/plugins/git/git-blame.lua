@@ -1,8 +1,5 @@
-return {
-  'f-person/git-blame.nvim', -- Adds git-blame capabilities. Use :GitBlameToggle
-  config = function()
-    require('gitblame').setup {
-      enabled = false,
-    }
-  end,
+-- Adds git-blame capabilities. Use :GitBlameToggle
+vim.pack.add { 'https://github.com/f-person/git-blame.nvim' }
+require('gitblame').setup {
+  enabled = true,
 }

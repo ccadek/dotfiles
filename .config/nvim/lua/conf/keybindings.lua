@@ -1,14 +1,15 @@
+-- set space as leader key
+vim.g.mapleader = ' '
+vim.g.maplocalleader = ' '
+
 -- use jj as as ESC
 vim.api.nvim_set_keymap('i', 'jj', '<ESC>', { noremap = true })
 
 -- disable ctrl-z to not suspend vim in the background
 vim.api.nvim_set_keymap('', '<c-z>', '', { noremap = true })
 
--- open Lazy
-vim.api.nvim_set_keymap('n', '<leader>l', ':Lazy<CR>', { noremap = true })
-
 -- close all buffers at once
-vim.api.nvim_set_keymap('n', '<leader>qq', '<cmd>qa<cr>', { desc = 'Quit All' })
+--vim.api.nvim_set_keymap('n', '<leader>qq', '<cmd>qa<cr>', { desc = 'Quit All' })
 
 -- disable Q altogether
 vim.keymap.set('n', 'Q', '<nop>')
@@ -34,7 +35,7 @@ vim.keymap.set('v', '<leader>y', '"+y')
 vim.keymap.set('n', '<leader>Y', '"+Y')
 
 -- replace all occurences of the word the cursor is currently on
-vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+--vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 vim.api.nvim_create_user_command('JsonFormat', function()
   vim.cmd [[setfiletype json]]
@@ -59,6 +60,7 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
+
 -- TIP: Disable arrow keys in normal mode
 vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
 vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
